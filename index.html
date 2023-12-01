@@ -12,10 +12,11 @@
 
 <body>
 
-    <div class="container-lg mx-auto p-5">
+    <div class="container-lg mx-auto p-3">
         
-        <div class="row d-flex justify-content-evenly" id="row1">
-            <h1 class="text-center"> List of Users </h1>
+        <div class="row  justify-content-evenly" id="row1">
+            <h1 class="text-center m-3"> List of Users </h1>
+            <hr>
 
         </div>
     </div>
@@ -30,26 +31,27 @@
                 <div class="flip-box col-lg-3 col-md-4 col-sm-6 ">
                     <div class="flip-box-inner ">
                         
-                            <div class="flip-box-front card border-primary mb-3"  style="height:100%;">
+                            <div class="flip-box-front card text-bg-dark mb-3"  style="height:100%;">
                                 <div class="card-body align-middle d-inline-block">
                                     <h3 class="card-title"><br>${i.name}</h3>
-                                    <h4 class="text-secondary fst-italic">${i.company.name}</h4>
-                                    <p class="text-secondary fst-italic">${i.company.bs}</p>
+                                    <h5 class="pink">Company: ${i.company.name}</h5>
+                                    <p class="pink fst-italic">"${i.company.bs}"</p>
 
                                 </div>
                             </div>
                         
                         
-                            <div class="flip-box-back card border-primary mb-3" style="height:100%;">
+                            <div class="flip-box-back card border-dark border-5 mb-3" style="height:100%;">
                                 <div class="card-header bg-transparent border-none">
                                     <h5 class="card-title">${i.name}</h5>
                                     
                                 </div>
-                                <div class="card-body text-start">
+                                <div class="card-body text-start ">
                                     Phone: ${i.phone} <br>
                                     Email: ${i.email}
                                 </div>
-                                <div class="card-footer bg-transparent border-none text-secondary fst-italic">${i.company.catchPhrase}
+                                <div class="card-footer bg-transparent border-none text-secondary fst-italic">
+                                   "${i.company.catchPhrase}"
                                 </div>
                             </div>
                         
